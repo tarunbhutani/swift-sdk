@@ -1,0 +1,15 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IBMSwiftSDKCore",
+        "repositoryURL": "https://github.com/IBM/swift-sdk-core",
+        "state": {
+          "branch": null,
+          "revision": "07983aed219ff5197ed2be7f0cab148aa652e49d"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
