@@ -34,7 +34,7 @@ let package = Package(
         .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/DiscoveryV1", sources: ["Models", "Discovery.swift", "Shared.swift" , "../SupportingFiles/InsecureConnection.swift"]),
+        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/DiscoveryV1", sources: ["Models", "Discovery.swift", "Shared.swift" , "SupportingFiles/InsecureConnection.swift"]),
         .testTarget(name: "DiscoveryV1Tests", dependencies: ["DiscoveryV1"]),
     ]
 )
