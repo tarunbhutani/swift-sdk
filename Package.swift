@@ -27,6 +27,9 @@ import PackageDescription
 
 let package = Package(
     name: "WatsonDeveloperCloud",
+    platforms: [
+        .iOS(.v10)
+    ],
     products: [
         .library(name: "DiscoveryV1", targets: ["DiscoveryV1"]),
     ],
