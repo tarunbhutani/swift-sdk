@@ -42,7 +42,7 @@ let package = Package(
         .library(name: "VisualRecognitionV4", targets: ["VisualRecognitionV4"]),
     ],
     dependencies: [
-        .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", .branch("core-changes")),
+        .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
     ],
     targets: [
         .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"]),
@@ -51,7 +51,7 @@ let package = Package(
         .testTarget(name: "AssistantV2Tests", dependencies: ["AssistantV2"]),
         .target(name: "CompareComplyV1", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "CompareComplyV1Tests", dependencies: ["CompareComplyV1"]),
-        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"]),
+        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"], sources: ["Sources/DiscoveryV1", "Sources/SupportingFiles/InsecureConnection.swift"]),
         .testTarget(name: "DiscoveryV1Tests", dependencies: ["DiscoveryV1"]),
         .target(name: "DiscoveryV2", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "DiscoveryV2Tests", dependencies: ["DiscoveryV2"]),
