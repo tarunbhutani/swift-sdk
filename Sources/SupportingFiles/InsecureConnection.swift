@@ -17,7 +17,7 @@
 #if !os(Linux)
 import Foundation
 
-public class InsecureConnection {
+class InsecureConnection {
     /// Allow network requests to a server without verification of the server certificate.
     /// **IMPORTANT**: This should ONLY be used if truly intended, as it is unsafe otherwise.
     static func session() -> URLSession {
