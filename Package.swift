@@ -51,7 +51,7 @@ let package = Package(
         .testTarget(name: "AssistantV2Tests", dependencies: ["AssistantV2"]),
         .target(name: "CompareComplyV1", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "CompareComplyV1Tests", dependencies: ["CompareComplyV1"]),
-        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"]),
+        .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"], sources: ["DiscoveryV1"]),
         .testTarget(name: "DiscoveryV1Tests", dependencies: ["DiscoveryV1"]),
         .target(name: "DiscoveryV2", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "DiscoveryV2Tests", dependencies: ["DiscoveryV2"]),
