@@ -1,5 +1,4 @@
 // swift-tools-version:5.3
-
 /**
  * (C) Copyright IBM Corp. 2016, 2019.
  *
@@ -24,14 +23,10 @@
 // tool (e.g. Carthage). If you would like support for the Swift Package Manager,
 // feel free to open an issue or even contribute a pull request that adds
 // support for the required libraries.
-
 import PackageDescription
 
 let package = Package(
     name: "WatsonDeveloperCloud",
-    platforms: [
-        .iOS(.v10)
-    ],
     products: [
         .library(name: "AssistantV1", targets: ["AssistantV1"]),
         .library(name: "AssistantV2", targets: ["AssistantV2"]),
@@ -47,7 +42,7 @@ let package = Package(
         .library(name: "VisualRecognitionV4", targets: ["VisualRecognitionV4"]),
     ],
     dependencies: [
-        .package(url: "file:///Users/angelopaparazzi/repos/swift-sdk-core", .branch("core-changes")),
+        .package(url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
     ],
     targets: [
         .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"]),

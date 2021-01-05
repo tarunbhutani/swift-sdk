@@ -6,7 +6,8 @@
         "repositoryURL": "https://github.com/IBM/swift-sdk-core",
         "state": {
           "branch": null,
-          "revision": "07983aed219ff5197ed2be7f0cab148aa652e49d",
+          "revision": "4ec57773271fd73263adae2ca42f630bf1e2096d",
+          "version": "1.0.0"
         }
       }
     ]
