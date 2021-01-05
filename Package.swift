@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 /**
  * (C) Copyright IBM Corp. 2016, 2019.
  *
@@ -42,7 +42,7 @@ let package = Package(
         .library(name: "VisualRecognitionV4", targets: ["VisualRecognitionV4"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
+        .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
     ],
     targets: [
         .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"], sources: ["Sources"]),
