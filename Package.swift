@@ -45,7 +45,7 @@ let package = Package(
         .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"], sources: ["Sources"]),
+        .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "AssistantV1Tests", dependencies: ["AssistantV1"]),
         .target(name: "AssistantV2", dependencies: ["IBMSwiftSDKCore"]),
         .testTarget(name: "AssistantV2Tests", dependencies: ["AssistantV2"]),
