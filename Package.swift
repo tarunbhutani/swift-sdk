@@ -40,6 +40,13 @@ let package = Package(
     ],
     targets: [
         .target(name: "DiscoveryV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/DiscoveryV1"),
-        .target(name: "SpeechToTextV1", dependencies: ["IBMSwiftSDKCore", "Starscream"], path: "Sources/SpeechToTextV1"),
+        .systemLibrary(
+            name: "CLibogg",
+            pkgConfig: "libogg",
+            providers: [
+                .brew(["libogg"])
+            ]
+        ),
+        .target(name: "SpeechToTextV1", dependencies: ["IBMSwiftSDKCore", "Starscream", "CLibogg"], path: "Sources/SpeechToTextV1"),
     ]
 )
