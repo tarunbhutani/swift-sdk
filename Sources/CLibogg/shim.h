@@ -18,6 +18,6 @@
 #ifndef libogg_shim_h
 #define libogg_shim_h
 
-#import <include/ogg/ogg.h>
+#import <ogg.h>
 
 #endif
