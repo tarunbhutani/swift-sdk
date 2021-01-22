@@ -15,6 +15,8 @@
  **/
 
 import Foundation
+import Clibogg
+import Clibopus
 
 internal class TextToSpeechDecoder {
 
