@@ -37,7 +37,7 @@ let package = Package(
         .package(name: "IBMSwiftSDKCore", url: "https://github.com/IBM/swift-sdk-core", from: "1.0.0"),
         .package(name: "Starscream", url: "https://github.com/daltoniam/Starscream", from: "3.0.0"),
         .package(name: "Clibogg", url: "https://github.com/apaparazzi0329/Clibogg", .branch("master")),
-        .package(name: "Clibogg", url: "https://github.com/apaparazzi0329/Clibopus", .branch("master")),
+        .package(name: "Clibopus", url: "https://github.com/apaparazzi0329/Clibopus", .branch("master")),
     ],
     targets: [
         .target(name: "SpeechToTextV1", dependencies: ["IBMSwiftSDKCore", "Starscream", "Clibogg", "Clibopus"], path: "Sources/SpeechToTextV1"),
