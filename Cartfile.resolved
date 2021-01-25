@@ -1,2 +1,2 @@
-github "IBM/swift-sdk-core" "xcode11-support"
+github "IBM/swift-sdk-core" "9ddbf389d9fcb79d57fa13ac2c616c60c6c5d0ce"
 github "daltoniam/Starscream" "3.0.5"
