@@ -1,2 +1,2 @@
-git "file:///Users/angelopaparazzi/repos/swift-sdk-core" "xcode11-support"
+github "IBM/swift-sdk-core" "xcode11-support"
 github "daltoniam/Starscream" "3.0.5"
