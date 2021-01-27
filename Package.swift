@@ -54,7 +54,7 @@ let package = Package(
     targets: [
         .systemLibrary(name: "Clibogg", path: "Sources/SupportingFiles/Dependencies/Clibogg", pkgConfig: "ogg", providers: [.brew(["libogg"])]),
         .systemLibrary(name: "Clibopus", path: "Sources/SupportingFiles/Dependencies/Clibopus", pkgConfig: "opus", providers: [.brew(["opus"])]),
-        .target(name: "Copus-tools", path: "Sources/SupportingFiles/Dependencies/Copus-tools"),
+        .target(name: "Copustools", path: "Sources/SupportingFiles/Dependencies/Copustools"),
         .target(name: "AssistantV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/AssistantV1"),
         .target(name: "AssistantV2", dependencies: ["IBMSwiftSDKCore"], path: "Sources/AssistantV2"),
         .target(name: "CompareComplyV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/CompareComplyV1"),
@@ -65,7 +65,7 @@ let package = Package(
         .target(name: "NaturalLanguageUnderstandingV1", dependencies: ["IBMSwiftSDKCore"], path: "Sources/NaturalLanguageUnderstandingV1"),
         .target(name: "PersonalityInsightsV3", dependencies: ["IBMSwiftSDKCore"], path: "Sources/PersonalityInsightsV3"),
         .target(name: "SpeechToTextV1", dependencies: ["IBMSwiftSDKCore", "Starscream", "Clibogg", "Clibopus"], path: "Sources/SpeechToTextV1"),
-        .target(name: "TextToSpeechV1", dependencies: ["IBMSwiftSDKCore", "Clibogg", "Clibopus", "Copus-tools"], path: "Sources/TextToSpeechV1"),
+        .target(name: "TextToSpeechV1", dependencies: ["IBMSwiftSDKCore", "Clibogg", "Clibopus", "Copustools"], path: "Sources/TextToSpeechV1"),
         .target(name: "ToneAnalyzerV3", dependencies: ["IBMSwiftSDKCore"], path: "Sources/ToneAnalyzerV3"),
         .target(name: "VisualRecognitionV3", dependencies: ["IBMSwiftSDKCore"], path: "Sources/VisualRecognitionV3"),
         .target(name: "VisualRecognitionV4", dependencies: ["IBMSwiftSDKCore"], path: "Sources/VisualRecognitionV4"),
